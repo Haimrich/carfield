@@ -22,8 +22,8 @@ packages:
     - apb
     - register_interface
   axi:
-    revision: fccffb5953ec8564218ba05e20adbedec845e014
-    version: 0.39.1
+    revision: f07498d53ecd5518b277c7d213ec3b71ca4df93c
+    version: 0.39.7
     source:
       Git: https://github.com/pulp-platform/axi.git
     dependencies:
@@ -157,8 +157,8 @@ packages:
     - scm
     - tech_cells_generic
   cluster_interconnect:
-    revision: 2967d8d17be0a6139229ca8d3d4956e182aec3de
-    version: 1.3.0
+    revision: 1284def6c0b7f7e9355eb093d00883ad9dead1b7
+    version: null
     source:
       Git: https://github.com/pulp-platform/cluster_interconnect.git
     dependencies:
@@ -193,6 +193,12 @@ packages:
     - common_cells
     - fpnew
     - tech_cells_generic
+  cv32e40x:
+    revision: 96b933ac2f723351872da55e7d2e9a82abd5df34
+    version: null
+    source:
+      Git: https://github.com/pulp-platform/cv32e40x.git
+    dependencies: []
   cva6:
     revision: ec242579ea25a1f6bef7235591814dd1e475f90c
     version: null
@@ -239,7 +245,7 @@ packages:
     dependencies:
     - common_cells
   hci:
-    revision: aed9005c761827c6cbff2ea9a15f9cc37acd1169
+    revision: 8408a6d7a7a4d814dcb3468934e49b407b1c783e
     version: null
     source:
       Git: https://github.com/pulp-platform/hci.git
@@ -263,15 +269,15 @@ packages:
     - scm
     - tech_cells_generic
   hwpe-ctrl:
-    revision: a5966201aeeb988d607accdc55da933a53c6a56e
-    version: null
+    revision: 3690a3c648f120546d8de2bc583d5170c36d2f20
+    version: 2.0.0
     source:
       Git: https://github.com/pulp-platform/hwpe-ctrl.git
     dependencies:
     - tech_cells_generic
   hwpe-stream:
-    revision: 3bc9694705b72a5b9bddc7fcde5091b9e45ba0c8
-    version: null
+    revision: b3d33afdd27e79bcda1348d0ab5f4afd52c03106
+    version: 1.9.0
     source:
       Git: https://github.com/pulp-platform/hwpe-stream.git
     dependencies:
@@ -341,7 +347,7 @@ packages:
     dependencies:
     - common_cells
   neureka:
-    revision: f6b9a014c7ff4c536865c8ad376b383d4026f286
+    revision: f4e131c86205d37882cf02ea4dd3bd141ef32d86
     version: null
     source:
       Git: https://github.com/pulp-platform/neureka.git
@@ -391,10 +397,10 @@ packages:
     - axi
     - common_verification
   pulp_cluster:
-    revision: 91c67fe61c398f53354f0ec9e80490fa4b2cba90
+    revision: 6ae0f04e29a9f2d98350837b708b0cee4e675070
     version: null
     source:
-      Git: https://github.com/pulp-platform/pulp_cluster.git
+      Git: https://github.com/Haimrich/pulp-cluster.git
     dependencies:
     - axi
     - axi2mem
@@ -421,17 +427,20 @@ packages:
     - tech_cells_generic
     - timer_unit
   redmule:
-    revision: 9223ccc932e21d0667e9c2d30831db41eec9299e
+    revision: 5dfeb61c060c9c5744b2c9c95e3bb51e3525cff2
     version: null
     source:
       Git: https://github.com/pulp-platform/redmule.git
     dependencies:
     - common_cells
     - cv32e40p
+    - cv32e40x
     - fpnew
     - hci
     - hwpe-ctrl
     - hwpe-stream
+    - ibex
+    - obi
     - register_interface
     - tech_cells_generic
   redundancy_cells:
@@ -499,8 +508,8 @@ packages:
     dependencies:
     - tech_cells_generic
   serial_link:
-    revision: 77bec1aebd92b2ebea9962814f2370d5d48390c3
-    version: 1.1.0
+    revision: c55df03a1da06b00e567cf968b1b1a5f40c9f802
+    version: 1.1.2
     source:
       Git: https://github.com/pulp-platform/serial_link.git
     dependencies:
