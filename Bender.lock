@@ -14,16 +14,18 @@ packages:
     dependencies:
     - tech_cells_generic
   apb_uart:
-    revision: 6c7dde3d749ac8274377745c105da8c8b8cd27c6
-    version: 0.2.1
+    revision: 8182a85d234417db46fe833533f8536644d3bee3
+    version: 0.2.3
     source:
       Git: https://github.com/pulp-platform/apb_uart.git
     dependencies:
     - apb
+    - obi
+    - obi_peripherals
     - register_interface
   axi:
-    revision: f07498d53ecd5518b277c7d213ec3b71ca4df93c
-    version: 0.39.7
+    revision: 78831b6feba265d5ee2683bbf42b4150f8a35c43
+    version: 0.39.8
     source:
       Git: https://github.com/pulp-platform/axi.git
     dependencies:
@@ -31,16 +33,16 @@ packages:
     - common_verification
     - tech_cells_generic
   axi2mem:
-    revision: be0c696709acaee579787ba2432d26ad27640594
-    version: 1.0.2
+    revision: b0e963433b2f6a61262b1448031e74eaec57c203
+    version: null
     source:
       Git: https://github.com/pulp-platform/axi2mem.git
     dependencies:
     - axi_slice
     - common_cells
   axi2per:
-    revision: e8ca052a745e184ca960933b2fe416b725e9ca81
-    version: 1.0.2
+    revision: 4932bd2b88a1c7b5f0bf95411fc512905ed32439
+    version: null
     source:
       Git: https://github.com/pulp-platform/axi2per.git
     dependencies:
@@ -164,8 +166,8 @@ packages:
     dependencies:
     - common_cells
   cluster_peripherals:
-    revision: e464eb9ddcc39e5a50009819601c4f213b1d4ba3
-    version: 2.2.0
+    revision: 0b8e8ab9e6be3a5030a18256bb7e75cf6b6f6cac
+    version: null
     source:
       Git: https://github.com/pulp-platform/cluster_peripherals.git
     dependencies:
@@ -245,7 +247,7 @@ packages:
     dependencies:
     - common_cells
   hci:
-    revision: 8408a6d7a7a4d814dcb3468934e49b407b1c783e
+    revision: 2a5a5081a2b32f1a04e7e28c00d3762d92602b84
     version: null
     source:
       Git: https://github.com/pulp-platform/hci.git
@@ -257,8 +259,8 @@ packages:
     - redundancy_cells
     - register_interface
   hier-icache:
-    revision: 7243834d2407ca23cff583d57641c84b982bd9bc
-    version: 1.3.0
+    revision: 2886cb2a46cea3e2bd2d979b505d88fadfbe150c
+    version: null
     source:
       Git: https://github.com/pulp-platform/hier-icache.git
     dependencies:
@@ -340,8 +342,8 @@ packages:
     - common_cells
     - register_interface
   mchan:
-    revision: 3f2ae92f78e2ddbd0e079cbb4f81fcc248171c12
-    version: 1.2.4
+    revision: 7f064f205a3e0203e959b14773c4afecf56681ab
+    version: null
     source:
       Git: https://github.com/pulp-platform/mchan.git
     dependencies:
@@ -358,13 +360,21 @@ packages:
     - register_interface
     - zeroriscy
   obi:
-    revision: 8097928cf1b43712f93d5356f336397879b4ad2c
-    version: 0.1.6
+    revision: 0155fc34e900c7c884e081c0a1114a247937ff69
+    version: 0.1.7
     source:
       Git: https://github.com/pulp-platform/obi.git
     dependencies:
     - common_cells
     - common_verification
+  obi_peripherals:
+    revision: 079894a6cbd4e544c477643d184a4c340bd4e391
+    version: 0.1.1
+    source:
+      Git: https://github.com/pulp-platform/obi_peripherals.git
+    dependencies:
+    - common_cells
+    - obi
   opentitan:
     revision: 74e7d6ca17e6a46e727ae2ae11177611232eaeb9
     version: null
@@ -382,8 +392,8 @@ packages:
     - register_interface
     - tech_cells_generic
   per2axi:
-    revision: 18cf4f2ad51b73de0448843ce0def54ab5fb274b
-    version: 1.0.5
+    revision: 95bf23119b47fc171d9ed3734c431f71cffd9350
+    version: null
     source:
       Git: https://github.com/pulp-platform/per2axi.git
     dependencies:
@@ -397,7 +407,7 @@ packages:
     - axi
     - common_verification
   pulp_cluster:
-    revision: 6ae0f04e29a9f2d98350837b708b0cee4e675070
+    revision: e5950edb502868ea0f208294b5fd03133208ca8e
     version: null
     source:
       Git: https://github.com/Haimrich/pulp-cluster.git
@@ -427,7 +437,7 @@ packages:
     - tech_cells_generic
     - timer_unit
   redmule:
-    revision: 5dfeb61c060c9c5744b2c9c95e3bb51e3525cff2
+    revision: ae6c14d776bdc620151329d494b3dd7d571283ed
     version: null
     source:
       Git: https://github.com/pulp-platform/redmule.git
@@ -444,7 +454,7 @@ packages:
     - register_interface
     - tech_cells_generic
   redundancy_cells:
-    revision: 9e31f7c6c24877eaf58279903e7a162b16c9a721
+    revision: 6ba6f415a9024decedabaf3f2b45263ff546dabd
     version: null
     source:
       Git: https://github.com/pulp-platform/redundancy_cells.git
@@ -517,8 +527,8 @@ packages:
     - common_cells
     - register_interface
   softex:
-    revision: a93ddff106ca3596660584ce6c7f77fb2a8475e3
-    version: null
+    revision: 77f219db2d0591afd18c191e5f4c6b112d7aac0c
+    version: 1.1.0
     source:
       Git: https://github.com/belanoa/softex.git
     dependencies:
